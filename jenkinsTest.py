@@ -33,7 +33,6 @@ class Baidu(unittest.TestCase):
         driver.find_element_by_id("su").click()
         time.sleep(3)
 
-        
 
     def tearDown(self):
         self.driver.quit()
