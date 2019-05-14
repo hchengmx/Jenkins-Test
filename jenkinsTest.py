@@ -15,14 +15,14 @@ class Baidu(unittest.TestCase):
         self.verificationErrors = []
         self.accept_next_alert = True
 
-    def test_baidu_selenium(self):
-        u"""selenium百度搜索用例"""
-        driver = self.driver
-        driver.get(self.base_url + "/?tn=98012088_5_dg&ch=12")
-        driver.find_element_by_id("kw").clear()
-        driver.find_element_by_id("kw").send_keys("selenium")
-        driver.find_element_by_id("su").click()
-        time.sleep(3)
+    # def test_baidu_selenium(self):
+    #     u"""selenium百度搜索用例"""
+    #     driver = self.driver
+    #     driver.get(self.base_url + "/?tn=98012088_5_dg&ch=12")
+    #     driver.find_element_by_id("kw").clear()
+    #     driver.find_element_by_id("kw").send_keys("selenium")
+    #     driver.find_element_by_id("su").click() 
+    #     time.sleep(2)
 
     def test_baidu_jenkins(self):
         u"""jenkins百度搜索用例"""
